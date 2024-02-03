@@ -6,6 +6,5 @@ This is a dataset for both Rural and Urban Consumer Price Index. Rural, urban, a
 
 **Tasks performed:**
 
-i. Parse the xml file in python and export separate csv files for the orignal dataset, dataset for urban only, dataset for rural only and dataset for urban+rural only
-[br]
+i. Parse the xml file in python and export separate csv files for the orignal dataset, dataset for urban only, dataset for rural only and dataset for urban+rural only.<br>
 ii. Import the csv files to google docs and draw some meaningful insights
