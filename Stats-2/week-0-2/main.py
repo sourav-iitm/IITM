@@ -3,7 +3,6 @@ import csv
 
 tree=ET.parse("datafile.xml")
 root=tree.getroot()
-r_tot=len(root)
 
 cpi_com = open('cpi_combined.csv', 'w')
 cpi_rur = open('cpi_rural.csv', 'w')
@@ -13,6 +12,8 @@ csvbth=csv.writer(cpi_com)
 csvrur=csv.writer(cpi_rur)
 csvurb=csv.writer(cpi_urb)
 csog=csv.writer(cpi_og)
+
+r_tot=len(root)
 
 rnum=0
 while rnum<=r_tot:
@@ -73,13 +74,7 @@ while rnum<=r_tot:
         
         
         csog.writerow(og_data)                 
-        
-        
-            
-                
-            
-            
-        
+
     rnum+=1 
 cpi_com.close()
 cpi_rur.close()
